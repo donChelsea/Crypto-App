@@ -5,7 +5,7 @@ import com.example.cryptoapp.data.remote.dto.CoinResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface CoinPaprikaService {
+interface CoinPaprikaApi {
 
     @GET("/v1/coins")
     suspend fun getCoins(): List<CoinResponse>
