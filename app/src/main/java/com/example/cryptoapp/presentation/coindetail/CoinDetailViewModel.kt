@@ -9,10 +9,12 @@ import com.example.cryptoapp.common.Constants.PARAM_COIN_ID
 import com.example.cryptoapp.common.Resource
 import com.example.cryptoapp.domain.usecase.GetCoinUseCase
 import com.example.cryptoapp.domain.usecase.GetCoinsUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
+@HiltViewModel
 class CoinDetailViewModel @Inject constructor(
     private val getCoinUseCase: GetCoinUseCase,
     savedStateHandle: SavedStateHandle
